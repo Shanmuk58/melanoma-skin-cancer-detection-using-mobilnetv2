@@ -1,24 +1,26 @@
-🧬 Melanoma Cancer Detection using Deep Learning
-This project focuses on the early detection of melanoma — a serious form of skin cancer — using deep learning techniques. By training a convolutional neural network (CNN) on dermatoscopic images, this model aims to assist in the accurate and efficient classification of potentially cancerous skin lesions.
+🧬 Melanoma Cancer Detection using MobileNetV2 & Enhanced Hybrid V3
+This project implements deep learning-based techniques for the early detection of melanoma, a dangerous form of skin cancer. It utilizes both MobileNetV2 (a lightweight pre-trained CNN model) and a custom Enhanced Hybrid V3 architecture to classify dermatoscopic images of skin lesions as benign or malignant.
 
 📁 Project Structure
-melanoma cancer detection final.ipynb — The main Jupyter notebook containing data preprocessing, model architecture, training, evaluation, and prediction.
+melanoma cancer detection final.ipynb — Main Jupyter notebook containing all steps: data preprocessing, model training, evaluation, and predictions.
 
-🚀 Features
-Data preprocessing and augmentation
+🚀 Key Features
+Transfer learning with MobileNetV2
 
-CNN-based classification model (possibly using transfer learning like VGG16, ResNet, etc.)
+Custom deep learning model: Enhanced Hybrid V3
 
-Model evaluation using accuracy, precision, recall, and confusion matrix
+Image augmentation for better generalization
 
-Visualization of training performance
+Performance visualization (accuracy/loss graphs, confusion matrix)
 
-Predictions on new or test images
+Binary classification: benign vs. malignant
 
 🧠 Technologies Used
 Python
 
-TensorFlow / Keras or PyTorch (depending on your code)
+TensorFlow / Keras
+
+OpenCV
 
 NumPy, Pandas
 
@@ -27,11 +29,9 @@ Matplotlib, Seaborn
 Scikit-learn
 
 📊 Dataset
-The model is trained on a dataset of dermatoscopic images. Commonly used datasets for melanoma detection include:
+The dataset consists of labeled dermatoscopic images of skin lesions. A common source is the ISIC Archive, though your dataset may differ.
 
-ISIC Skin Cancer Dataset
-
-(Replace with the actual dataset link or description if different)
+✅ Update this section with a description or link to your actual dataset, if different.
 
 🛠️ Installation
 Clone the repository:
@@ -41,32 +41,28 @@ Copy
 Edit
 git clone https://github.com/your-username/melanoma-cancer-detection.git
 cd melanoma-cancer-detection
-Create a virtual environment and install dependencies:
+Install dependencies:
 
 bash
 Copy
 Edit
 pip install -r requirements.txt
-Launch Jupyter:
+Launch the notebook:
 
 bash
 Copy
 Edit
 jupyter notebook
 📈 Model Results
-Training Accuracy: 97%
 
-Validation Accuracy: 95
-%
 
-(You can update this with actual numbers)
+Training-97%
+Validation-95%
 
-🧪 Usage
-You can use the trained model to predict whether a skin lesion is benign or malignant by supplying an image to the prediction function in the notebook.
+🧪 How to Use
+Load the notebook and run all cells.
 
-📌 Disclaimer
-This project is for educational and research purposes only. It is not intended to be used as a diagnostic tool in medical practice.
+Upload an image via the provided interface or path.
 
-📄 License
-This project is open-source and available under the MIT License.
+The model predicts whether the lesion is benign or malignant.
 
